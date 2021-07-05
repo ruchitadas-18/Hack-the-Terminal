@@ -82,9 +82,9 @@ def mail():
     def send_email(receiver, subject, message):
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.starttls()
-        server.login('happyagrawal120@gmail.com', 'Ha@120802')
+        server.login({E-Mail}, {Password})
         email = EmailMessage()
-        email['From'] = 'happyagrawal120@gmail.com'
+        email['From'] = '{email}'
         email['To'] = receiver
         email['Subject'] = subject
         email.set_content(message)
@@ -161,7 +161,7 @@ def Tel():
             return last_update
 
 
-    token = '1818066897:AAEN8bMeIJJnAkBUJC8SWZwJPyANeOf8Q2I' #Token of your bot
+    token = {token} #Token of your bot
     mnb1321_bot = BotHandler(token)
 
     def main():
@@ -210,8 +210,8 @@ def insta():
     def talk(text):
         talk()
     # login credentials
-    insta_username = 'insta_.bot'
-    insta_password = 'Hacker.001'
+    insta_username = {username}
+    insta_password = {password}
 
     comments = ['Nice shot! @{}',
                 'I love your profile! @{}',
