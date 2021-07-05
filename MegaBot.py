@@ -30,7 +30,7 @@ def what():
 
     def WhatsappMsg(name, message):
         sleep(20)
-        startfile("C:\\Users\\Parth Agrawal\\AppData\\Local\\WhatsApp\\WhatsApp.exe")
+        startfile("your whatsapp's target location")
 
         sleep(5)
 
@@ -53,7 +53,7 @@ def what():
         press('enter')
 
 
-    WhatsappMsg('kartik', '2nd try.')
+    WhatsappMsg('Name', 'Message')
 
 #Mailbot
 
@@ -82,9 +82,9 @@ def mail():
     def send_email(receiver, subject, message):
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.starttls()
-        server.login('happyagrawal120@gmail.com', 'Ha@120802')
+        server.login('your email', 'password')
         email = EmailMessage()
-        email['From'] = 'happyagrawal120@gmail.com'
+        email['From'] = 'your email'
         email['To'] = receiver
         email['Subject'] = subject
         email.set_content(message)
@@ -93,10 +93,7 @@ def mail():
     # Give your list of names and their respective Emails here
 
     email_list = {
-        'parth':'agrawalparth564@gmail.com',
-        'pranav':'agrawalpranav71@gmail.com',
-        'papa':'parthagrawal35976@gmail.com',
-        'kartik': "kartiks914@gmail.com"
+        'name of the person ' 'email of that person'
     }
 
     def get_email_info():
@@ -210,8 +207,8 @@ def insta():
     def talk(text):
         talk()
     # login credentials
-    insta_username = 'insta_.bot'
-    insta_password = 'Hacker.001'
+    insta_username = ''
+    insta_password = ''
 
     comments = ['Nice shot! @{}',
                 'I love your profile! @{}',
@@ -244,7 +241,7 @@ def insta():
         session.join_pods(topic='sports', engagement_mode='no_comments')
 
         session.set_do_follow(enabled=True, percentage=10, times=2)
-        users = session.target_list("C:\\Users\\Parth Agrawal\\users.txt")
+        users = session.target_list('path of text file created for users you want to follow')
         session.follow_user_followers(users, amount=10, randomize=True)
 
 def talk(text):
